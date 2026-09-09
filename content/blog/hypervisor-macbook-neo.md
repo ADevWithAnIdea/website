@@ -8,7 +8,7 @@ summary: "Building a custom hypervisor for the MacBook Neo and using unattended 
 **TL;DR:** To reverse engineer modern Apple Silicon Macs for the purpose of
 porting Linux, I built a custom hypervisor for the MacBook Neo and documented
 the internals of Apple's proprietary security monitor (SPTM). I have
-successfully used this hypervisor to achieve, a milestone that usually takes
+successfully used this hypervisor to achieve a milestone that usually takes
 months in a few weeks. This was all enabled by (mostly) unattended LLM loops.
 
 Context: My goal is to port Linux to modern Apple Silicon SoCs, starting with
@@ -85,7 +85,7 @@ in that context.
 There are other problems too:
 
 - Many implementation defined (impdef) system registers come locked; I cannot write to them and thus cannot replicate their hardware side effects
-- Custom Guarded Execution Features (GFX) instructions that only run in GL mode used in SPTM
+- Custom Guarded Execution Features (GXF) instructions that only run in GL mode used in SPTM
 
 In order to virtualize macOS, all of these problems need solutions. We can
 mostly ignore Exclaves because there exist fallback paths at the cost of some
@@ -599,8 +599,9 @@ contribute to the open OS ecosystem on Apple Silicon Macs.
 *significant* progress on the drivers since then. I have promoted my kernel
 driver prototype into a fully functional Rust driver on the Neo, and built a
 (very thoroughly tested) prototype kernel driver for the M5. Niklas has fleshed
-out signifiant parts of the GPU userspace stack and has finished his kernel
-driver prototype on M4. Here is Balatro running on his GPU stack with working
+out signifiant parts of the GPU userspace stack, finished his kernel driver
+prototype, and built a synchronous Rust driver for Linux on the M4. Here is
+Balatro and Quake running on Linux using his GPU stack with working
 compositing:
 
 ![Balatro running on Niklas Sheth's clean-room Apple GPU stack.](/images/blog/hypervisor-macbook-neo/balatro.png)
