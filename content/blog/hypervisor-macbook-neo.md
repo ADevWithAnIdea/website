@@ -600,7 +600,8 @@ contribute to the open OS ecosystem on Apple Silicon Macs.
 driver prototype into a fully functional Rust driver on the Neo, and built a
 (very thoroughly tested) prototype kernel driver for the M5. Niklas has fleshed
 out signifiant parts of the GPU userspace stack and has finished his kernel
-driver prototype on M4. Here is Balatro running on his GPU stack:
+driver prototype on M4. Here is Balatro running on his GPU stack with working
+compositing:
 
 ![Balatro running on Niklas Sheth's clean-room Apple GPU stack.](/images/blog/hypervisor-macbook-neo/balatro.png)
 
