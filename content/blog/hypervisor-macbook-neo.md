@@ -608,9 +608,16 @@ compositing:
 
 I'll have more to say on this in the coming weeks.
 
+## Join Us and Discussion
+
 If you're interested in being a part of this, we invite you to join our
 [Discord Server](https://discord.gg/2UeuP9x632). Feel free to come by to
 discuss ideas, chat, or just hang out!
+
+Discussion on this article:
+
+- [Hacker News](https://news.ycombinator.com/item?id=49631931)
+- [Reddit](https://old.reddit.com/r/linux/comments/1wbv4ur/i_came_i_prompted_i_left_part_1_building_a_custom/)
 
 ## Acknowledgements
 
