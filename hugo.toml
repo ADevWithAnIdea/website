@@ -1,0 +1,42 @@
+baseURL = "https://codyho.dev"
+languageCode = "en-us"
+title = "Cody Ho"
+
+[params]
+  description = "Personal website of Cody Ho"
+  author = "Cody Ho"
+  github = "https://github.com/ADevWithAnIdea"
+  linkedin = "https://linkedin.com"
+
+[menus]
+  [[menus.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 1
+  [[menus.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 2
+  [[menus.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
+  [[menus.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 4
+  [[menus.main]]
+    name = "Resume"
+    url = "/documents/cody_ho_resume.pdf"
+    weight = 5
+  [[menus.main]]
+    name = "GitHub"
+    url = "https://github.com/ADevWithAnIdea"
+    weight = 6
+    [menus.main.params]
+      external = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
