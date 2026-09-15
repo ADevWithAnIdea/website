@@ -621,13 +621,16 @@ Discussion on this article:
 
 ## Acknowledgements
 
-- [Niklas Sheth](https://x.com/niklassheth) for writing a clean room implementation of my SPTM emulator and his excellent work on the DCP and GPU
+- [Niklas Sheth](https://x.com/niklassheth) for writing a clean room 
+  implementation of my SPTM emulator and his excellent work on the DCP and GPU
 
 - [Yureka Lilian](https://fedi.yuka.dev) for significant help with my dev setup
 
-- The authors of [*Modern iOS Security Features*](https://arxiv.org/pdf/2510.09272) for providing valuable insight into how SPTM works
+- The authors of [*Modern iOS Security Features*](https://arxiv.org/pdf/2510.09272)
+  for providing valuable insight into how SPTM works
 
-- The [Asahi Linux](https://asahilinux.org) project for laying the groundwork that made this work possible
+- The [Asahi Linux](https://asahilinux.org) project for laying the groundwork
+  that made this work possible
 
 ## Footnotes
 
@@ -648,9 +651,9 @@ implement the SPTM contract, though it was very helpful in other ways.
 
 [^5]: [https://github.com/ADevWithAnIdea/m1n1/commit/ffe58c7802376b111f67b3cf45d80a1945db1f90](https://github.com/ADevWithAnIdea/m1n1/commit/ffe58c7802376b111f67b3cf45d80a1945db1f90)
 
-This prototype driver contains basically all firmware ABI details we ever need
-and is very comprehensive, containing full compute, render (partial renders,
-depth/stencil buffers, etc), fence, and multi context support.
+    This prototype driver contains basically all firmware ABI details we ever
+    need and is very comprehensive, containing full compute, render (partial
+    renders, depth/stencil buffers, etc), fence, and multi context support.
 
 [^6]: [https://github.com/adevwithanidea/agx-re/](https://github.com/adevwithanidea/agx-re/)
 
@@ -659,12 +662,12 @@ in (or just sitting for long enough on the lock screen) the system would freeze
 with the same `UNEXP_RT_HIT_DIR` error as in type 24, except there were no
 coprocessor page tables this time.
 
-This issue is still present on the MacBook Neo; on the M4 mac mini, Niklas
-fixed the issue during the development of the clean room emulator. His best
-guess of the root cause is that m1n1 has a WB mapping of all guest RAM, and
-then an access to one of the problematic pages may be speculatively executed,
-but we're ultimately unsure of the root cause or why the Neo hits the problem
-while the M4 Mac Mini does not.
+    This issue is still present on the MacBook Neo; on the M4 mac mini, Niklas
+    fixed the issue during the development of the clean room emulator. His best
+    guess of the root cause is that m1n1 has a WB mapping of all guest RAM, and
+    then an access to one of the problematic pages may be speculatively
+    executed, but we're ultimately unsure of the root cause or why the Neo hits
+    the problem while the M4 Mac Mini does not.
 
 [^8]: [https://github.com/ADevWithAnIdea/apple-silicon-re/blob/master/docs/sptm/exclaves.md](https://github.com/ADevWithAnIdea/apple-silicon-re/blob/master/docs/sptm/exclaves.md)
 
