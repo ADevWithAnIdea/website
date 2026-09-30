@@ -2,6 +2,14 @@ baseURL = "https://codyho.dev"
 languageCode = "en-us"
 title = "Cody Ho"
 
+# RSS is served only for /blog/ (the sole section). No feed for the home
+# page, taxonomies, or terms.
+[outputs]
+  home = ["HTML"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]
+
 [params]
   description = "Personal website of Cody Ho"
   author = "Cody Ho"
