@@ -13,10 +13,6 @@ title = "Cody Ho"
     name = "Blog"
     url = "/blog/"
     weight = 1
-  # [[menus.main]]
-  #   name = "Projects"
-  #   url = "/projects/"
-  #   weight = 2
   [[menus.main]]
     name = "About"
     url = "/about/"
