@@ -359,6 +359,12 @@ h3 {
   line-height: 1.6;
 }
 
+.rss-link {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+}
+
 /* ============================================
    Prose (single page content)
    ============================================ */
